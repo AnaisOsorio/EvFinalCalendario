@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeF"
+    android:background="@color/veige">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/lunes"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lunes" />
+
+                    <TextView
+                        android:id="@+id/Lunestxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Lunes"
+                        android:textSize="55dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/martes"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/martes" />
+
+                    <TextView
+                        android:id="@+id/Martestxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Martes"
+                        android:textSize="55dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/miercoles"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/miercoles" />
+
+                    <TextView
+                        android:id="@+id/miercolestxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Miercoles"
+                        android:textSize="55dp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/jueves" />
+
+                    <TextView
+                        android:id="@+id/juevestxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Jueves"
+                        android:textSize="55dp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/viernes" />
+
+                    <TextView
+                        android:id="@+id/viernestxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Viernes"
+                        android:textSize="55dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="133dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sabado" />
+
+                    <TextView
+                        android:id="@+id/sabadotxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Sabado"
+                        android:textSize="55dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="136dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/domingo" />
+
+                    <TextView
+                        android:id="@+id/domingotxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:gravity="center_vertical"
+                        android:text="Domingo"
+                        android:textSize="55dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
