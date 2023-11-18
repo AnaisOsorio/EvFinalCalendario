@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".BuyListF"
+    tools:context=".FragmentLista"
     android:background="@color/veige">
 
     <ScrollView
@@ -24,7 +24,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >

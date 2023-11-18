@@ -1,71 +1,54 @@
 
 package com.santotomas.evfinalcalendario;
 
-        import androidx.annotation.NonNull;
-        import androidx.appcompat.app.ActionBarDrawerToggle;
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.core.view.GravityCompat;
-        import androidx.drawerlayout.widget.DrawerLayout;
+import android.os.Bundle;
+import android.view.MenuItem;
 
-        import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
-        import android.view.MenuItem;
-        import android.widget.Toast;
-        import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
-        import com.google.android.material.navigation.NavigationView;
+enum ProviderType{
+    BASIC,
+}
+public class MainActivityHome extends AppCompatActivity{
 
-public class MainActivityHome extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView bottomNavigationView;
 
-    private DrawerLayout drawerLayout;
+    FragmentInicio fragmentInicio = new FragmentInicio();
+    FragmentRecetas fragmentRecetas = new FragmentRecetas();
+    FragmentLista fragmentLista = new FragmentLista();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_semana);
+        setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentInicio).commit();
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav, R.string.close_nav);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-
-        if (savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeF()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
-        }
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int itemId = item.getItemId();
-
-        if (itemId == R.id.nav_home) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeF()).commit();
-        } else if (itemId == R.id.nav_recetas) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RecetasF()).commit();
-        } else if (itemId == R.id.nav_blist) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BuyListF()).commit();
-        } else if (itemId == R.id.nav_logout) {
-            Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show();
-        }
-
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
-    }
-
-
-    @Override
-    public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)){
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else{
-            super.onBackPressed();
-        }
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.nav_home){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentInicio).commit();
+                    return true;
+                }
+                else if (item.getItemId() == R.id.nav_recetas){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentRecetas).commit();
+                    return true;
+                }
+                else if (item.getItemId() == R.id.nav_lista){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentLista).commit();
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        });
     }
 }

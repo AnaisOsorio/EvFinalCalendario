@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".HomeF"
+    tools:context=".FragmentInicio"
     android:background="@color/veige">
 
 
@@ -25,7 +25,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp">
@@ -54,7 +54,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >
@@ -82,7 +82,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >
@@ -111,7 +111,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >
@@ -141,7 +141,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >
@@ -170,7 +170,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >
@@ -199,7 +199,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="389dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
                 app:cardCornerRadius="15dp" >

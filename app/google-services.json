@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "535726964187",
+    "project_id": "recetariosemanal-875cc",
+    "storage_bucket": "recetariosemanal-875cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535726964187:android:1724956a0588bb9fb53bfe",
+        "android_client_info": {
+          "package_name": "com.santotomas.evfinalcalendario"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD6sWt-4peo9ZPXEI5P8ea6G8V4Dw1GeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

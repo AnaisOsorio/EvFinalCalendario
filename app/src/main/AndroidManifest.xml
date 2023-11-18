@@ -10,17 +10,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EvFinalCalendario"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivityRegister"
+            android:name=".ActivityLogin"
             android:exported="false" />
+        <activity
+            android:name=".ActivityRegister"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivityHome"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FragmentLista"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FragmentInicio"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FragmentRecetas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

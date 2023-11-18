@@ -4,192 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ActivityRegister"
     android:background="@color/cafe">
 
-
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="413dp"
-        android:layout_height="585dp"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/fondobajo" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fondoclaro" />
+
+    <Button
+        android:id="@+id/btnregisterR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btnbg"
+        android:padding="16dp"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passregisterconfirm" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="178dp"
-        android:layout_height="52dp"
-        android:fontFamily="@font/acme"
+        android:layout_width="168dp"
+        android:layout_height="69dp"
         android:text="Registro"
         android:textColor="#ffff"
         android:textSize="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.507" />
 
-    <LinearLayout
-        android:layout_width="345dp"
-        android:layout_height="562dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="357dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:text="Ingrese sus datos"
+        android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861">
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
+    <EditText
+        android:id="@+id/editnameregister"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Nombre de usuario"
+        android:inputType="text"
+        android:background="@drawable/textbackground"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/acme"
-            android:text="Ingrese un nombre de usuario"
-            android:textSize="23dp" />
+    <EditText
+        android:id="@+id/correoregister"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbackground"
+        android:ems="10"
+        android:hint="correo@gmail.com"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editnameregister" />
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/textbackground"
-            android:ems="10"
-            android:hint="Usuario"
-            android:inputType="text"
-            android:padding="10dp"
-            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/passregister"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbackground"
+        android:ems="10"
+        android:hint="contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoregister" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/acme"
-            android:text="ingrese su correo"
-            android:textSize="23dp" />
+    <EditText
+        android:id="@+id/passregisterconfirm"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textbackground"
+        android:ems="10"
+        android:hint="confirme su contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passregister" />
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/textbackground"
-            android:ems="10"
-            android:hint="correo@gmail.com"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnrvvolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Volver"
+        android:background="@drawable/btnbg"
+        android:textSize="16dp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toEndOf="@+id/btnregisterR2"
+        app:layout_constraintTop_toBottomOf="@+id/passregisterconfirm" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/acme"
-            android:text="Ingrese una contraseña"
-            android:textSize="23dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/textbackground"
-            android:ems="10"
-            android:hint="contraseña"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/acme"
-            android:text="Confirme su contraseña"
-            android:textSize="23dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/textbackground"
-            android:ems="10"
-            android:hint="contraseña"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/btnregister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/cafe"
-            android:text="Registrarse"
-            android:textSize="20dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:background="@color/cafe" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:text="o registrarse con"
-                android:textSize="16dp" />
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:background="@color/cafe" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="202dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageButton2"
-                android:layout_width="68dp"
-                android:layout_height="58dp"
-                android:layout_marginRight="20dp"
-                app:srcCompat="@drawable/facebook" />
-
-            <ImageView
-                android:id="@+id/imageButton3"
-                android:layout_width="66dp"
-                android:layout_height="59dp"
-                android:layout_marginLeft="20dp"
-                app:srcCompat="@drawable/google" />
-        </LinearLayout>
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="133dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/account_box_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
