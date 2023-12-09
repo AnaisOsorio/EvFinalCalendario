@@ -9,39 +9,38 @@
     tools:context=".FragmentRecetas"
     android:background="@color/veige">
 
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        android:orientation="vertical"
+        android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Recetas"
+            android:textSize="30dp" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="15dp" >
+        <Button
+            android:id="@+id/btnCrearReceta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/whitebg"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Crear nuevo receta"
+            android:textSize="16dp" />
 
-                <TextView
-                    android:id="@+id/Lunestxt"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:gravity="center"
-                    android:text="Ingresar receta"
-                    android:textSize="20dp" />
-            </androidx.cardview.widget.CardView>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebg" />
 
-        </LinearLayout>
-    </ScrollView>
-
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
