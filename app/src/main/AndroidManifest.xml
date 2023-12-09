@@ -16,31 +16,22 @@
         tools:targetApi="31">
         <activity
             android:name=".MostrarReceta"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".CrearRecetas"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ActivityLogin"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ActivityRegister"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivityHome"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".FragmentLista"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".FragmentInicio"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".FragmentRecetas"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -59,5 +50,4 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>
